@@ -69,6 +69,10 @@ permalink: "category/:title"
 compress_html:
   clippings: all
 
+# Collections
+collections:
+  categories
+
 # Defaults
 defaults:
   - scope:
@@ -83,10 +87,6 @@ defaults:
       type: "pages"
     values:
       layout: page
-  - scope:
-      type: "categories"
-    values:
-      layout: category-post
 
 # Exclude
 exclude:
