@@ -86,7 +86,7 @@ defaults:
   - scope:
       type: "categories"
     values:
-      layout: category
+      layout: category-post
 
 # Exclude
 exclude:
