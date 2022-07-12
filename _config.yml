@@ -2,9 +2,9 @@
 markdown: kramdown
 
 # URL of the Site
-url: "https://derican.github.io/"
+url: ""
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: derican.github.com
+baseurl: 
 
 # Title of the Site
 title: Home of Derican
@@ -63,6 +63,7 @@ plugins:
 # Permalink
 permalink: "blog/:title"
 permalink: "cv/"
+permalink: "category/:title"
 
 # Compress
 compress_html:
@@ -82,6 +83,10 @@ defaults:
       type: "pages"
     values:
       layout: page
+  - scope:
+      type: "categories"
+    values:
+      layout: category
 
 # Exclude
 exclude:
