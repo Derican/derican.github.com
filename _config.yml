@@ -71,7 +71,9 @@ compress_html:
 
 # Collections
 collections:
-  categories
+  categories:
+    output: true
+    permalink: /category/:title
 
 # Defaults
 defaults:
