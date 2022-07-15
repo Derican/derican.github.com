@@ -61,9 +61,9 @@ plugins:
   - jekyll-feed
 
 # Permalink
-permalink: "blog/:title"
 permalink: "cv/"
-permalink: "category/:title"
+permalink: "category/:name"
+permalink: "blog/:title"
 
 # Compress
 compress_html:
@@ -73,7 +73,7 @@ compress_html:
 collections:
   categories:
     output: true
-    permalink: /category/:title
+    permalink: /category/:name
 
 # Defaults
 defaults:

@@ -4,11 +4,32 @@
     </div>
     <a href="{{category.url | absolute_url}}">
         <div class="column has-text-left-desktop has-text-left-tablet">
-            <h1 class="title is-size-4-touch">{{category.title}}</h1>
+            <h1 class="title is-size-4-touch">{{category.name}}</h1>
             <div class="content has-text-grey">
-                {{ category.content | truncate: 300 | strip_html | strip_newlines | strip | escape }}
+                {{ category.content | strip_html | strip_newlines | strip | escape }}
                 <hr class="has-background-grey">
-                <span class="has-text-grey">Published on <span class="has-text-weight-semibold">{{ category.date | date: "%-B %d, %Y" }}</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{% assign words = post.content | number_of_words %}{%- unless content.size == 0 -%}{{ words | divided_by:180 }} min{% endunless %}</span> read
+                <span class="has-text-grey">Last Updated on <span class="has-text-weight-semibold">
+                    {% assign latest = now %}
+                    {% assign valid = false %}
+                    {% for post in site.posts %}
+                        {% if post.date > latest or valid == false%}
+                            {% assign latest = post.date %}
+                            {% assign valid = true %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if valid == true %}
+                    {{ latest | date: "%-B %d, %Y" }}
+                    {% else %}
+                    Sometime in the Future
+                    {% endif %}</span></span> | <i class="fas fa-file"></i> <span
+                    class="has-text-weight-semibold">
+                    {% assign posts_counter = 0 %}
+                    {% for post in site.posts %}
+                        {% if post.category == category.name %}
+                            {% assign posts_counter = posts_counter | plus: 1 %}
+                        {% endif %}
+                    {% endfor %}
+                    {{ posts_counter }}</span> posts
             </div>
         </div>
     </a>

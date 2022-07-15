@@ -10,7 +10,7 @@ layout: compress
 <body>
     {% include navbar.html %}
 
-    <section class="hero is-fullheight" id="category">
+    <section class="hero is-fullheight" id="category-post">
         <div class="hero-body">
             <div class="container">
                 {% include blogpage-heading.html %}
@@ -19,7 +19,7 @@ layout: compress
         <div id="results-container"></div>
         <!--Post Cards Section-->
         {% for post in site.posts %}
-            {% if post.category == page.title %}
+            {% if post.category == page.name %}
                 {% include blog-card.html %}
             {% endif %}
         {% endfor %}
