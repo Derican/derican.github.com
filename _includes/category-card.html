@@ -12,7 +12,7 @@
                     {% assign latest = now %}
                     {% assign valid = false %}
                     {% for post in site.posts %}
-                        {% if post.date > latest or valid == false%}
+                        {% if post.category == category.name and (post.date > latest or valid == false) %}
                             {% assign latest = post.date %}
                             {% assign valid = true %}
                         {% endif %}
