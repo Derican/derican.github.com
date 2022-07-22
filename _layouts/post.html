@@ -37,7 +37,10 @@ layout: compress
                 target="_blank"><b class="has-text-link"><u>{{site.author-name}}</u></b>
               </a>
             </p>
-            {% assign words = content | number_of_words %}
+            <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Last Modified on
+              <b>{{ page.last-modified | date: "%-B %d, %Y" }}</b>
+            </p>
+            {% assign words = content | number_of_words : "auto" %}
             {%- unless content.size == 0 -%}
             <p class="subtitle is-uppercase"><i class="fas fa-clock"></i> <b class="has-text-link">
                 {{ words | divided_by:180 }} min
