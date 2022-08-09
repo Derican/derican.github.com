@@ -59,7 +59,7 @@ layout: compress
 								class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter"
 							>
 								Last Modified on
-								<b>{{ page.last-modified | date: "%-B %d, %Y" }}</b>
+								<b>{{ page.last_modified_at | date: "%-B %d, %Y" }}</b>
 							</p>
 							{% assign words = content | number_of_words %} {%- unless
 							content.size == 0 -%}

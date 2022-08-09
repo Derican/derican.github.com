@@ -59,6 +59,7 @@ sass:
 plugins:
   - jekyll-admin
   - jekyll-feed
+  - jekyll-last-modified-at
 
 # Permalink
 permalink: "cv/"
