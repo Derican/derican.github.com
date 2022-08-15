@@ -60,6 +60,7 @@ plugins:
   - jekyll-admin
   - jekyll-feed
   - jekyll-last-modified-at
+  - jekyll-spaceship
 
 # Permalink
 permalink: "cv/"

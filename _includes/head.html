@@ -5,5 +5,48 @@
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
     <!-- <script src="https://kit.fontawesome.com/8e9dca89dc.js" crossorigin="anonymous"></script> -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <link rel="shortcut icon" href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/images/logo.png' | absolute_url }}{% endif %}" type="image/x-icon">
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+        $(document).ready(function () {
+            var $canvas = null, $this = null, _ctx = null, _text = '';
+            $('.language-chart').each(function () {
+                $this = $(this);
+                $canvas = $('<canvas id="container"></canvas>');
+                _text = $this.text();
+                console.log(JSON.parse(_text));
+                $this.text('').append($canvas);
+                _ctx = $canvas.get(0).getContext('2d');
+                var chart = Highcharts.chart('container', {
+                    plotOptions: {
+                        series: {
+                            pointStart: Date.UTC(2020, 2, 4),
+                            pointInterval: 24 * 3600 * 1000
+                        }
+                    },
+                    type: 'line',
+                    tooltip: {
+                        shared: true,
+                        split: false,
+                        enabled: true,
+                    },
+                    xAxis: {
+                        type: 'datetime'
+                    },
+
+                    series: [{
+                        data: [1, 2, 3, 4, 5],
+                    },
+                    {
+                        data: [5, 15, 20, 10, 1],
+                    }
+                    ]
+                });
+                (_ctx && _text) && (chart);
+            });
+        });
+    </script>
+    <link rel="shortcut icon"
+        href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/images/logo.png' | absolute_url }}{% endif %}"
+        type="image/x-icon" />
 </head>
