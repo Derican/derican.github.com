@@ -572,16 +572,16 @@ a.navbar-item.is-active {
 }
 
 .chart-line {
-	width: 200px;
-	height: 200px;
+	width: auto;
+	height: auto;
 }
 
 .chart-radar {
-	width: 200px;
-	height: auto;
+	width: 300px;
+	height: 200px;
 }
 
 .chart-right {
 	float: right;
-	padding: 0.1rem;
+	padding: 0.1rem !important;
 }
