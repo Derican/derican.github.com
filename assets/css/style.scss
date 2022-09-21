@@ -579,9 +579,15 @@ a.navbar-item.is-active {
 .chart-radar {
 	width: 300px;
 	height: 200px;
+	margin-left: 1em;
 }
 
 .chart-right {
 	float: right;
 	padding: 0.1rem !important;
+	background-color: white !important;
+}
+
+.content h3 {
+	clear: right;
 }
