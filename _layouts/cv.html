@@ -13,7 +13,8 @@ layout: compress
 
 		<section class="hero is-fullheight has-text-centered" id="cv">
 			<div class="hero-body">
-				<div class="container">
+				<div class="left-sticky-column is-align-self-flex-start"></div>
+				<div class="main-column">
 					<a
 						href="{{page.url | relative_url}}"
 						class="has-text-black"
@@ -80,6 +81,7 @@ layout: compress
 						<p>{{ content }}</p>
 					</div>
 				</div>
+				<div class="right-sticky-column is-align-self-flex-start"></div>
 			</div>
 		</section>
 		{% include footer.html %}

@@ -12,17 +12,32 @@ layout: compress
 
     <section class="hero is-fullheight" id="category-post">
         <div class="hero-body">
-            <div class="container">
-                {% include blogpage-heading.html %}
+            <div class="left-sticky-column is-align-self-flex-start blog-sidebar">
+                <div>
+                    <h2 class="sidebar-title">Posts</h2>
+                    <ul class="sidebar-list">
+                        {% for post in site.posts %}
+                        {% if post.category == page.title %}
+                            <li class="sidebar-item">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div id="results-container"></div>
-        <!--Post Cards Section-->
-        {% for post in site.posts %}
-            {% if post.category == page.name %}
-                {% include blog-card.html %}
-            {% endif %}
-        {% endfor %}
+            <div class="main-column is-align-self-flex-start">
+                <div class="container category-header">
+                    <h1 class="title has-text-centered is-2 has-text-weight-semibold">
+                        {{ page.title }}
+                    </h1>
+                    <blockquote>{{ page.description }}</blockquote>
+					<hr class="has-background-black" />
+                </div>
+                {{ page.content }}
+            </div>
+            <div class="right-sticky-column is-align-self-flex-start blog-sidebar"></div>
+            </div>
         </div>
     </section>
     <br>
@@ -31,14 +46,14 @@ layout: compress
     <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
 
     <script>
-        SimpleJekyllSearch({
-            searchInput: document.getElementById('search'),
-            resultsContainer: document.getElementById('results-container'),
-            json: '{{site.url}}{{site.baseurl}}/search.json',
-            searchResultTemplate: '<div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card"><div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet"><div class="image is-16by9" style="background-image: url({image});"></div></div><a href="{url}"><div class="column has-text-left-desktop has-text-left-tablet"><h1 class="title is-size-4-touch">{title}</h1><div class="content has-text-grey">{content}<hr class="has-background-grey"><span class="has-text-grey">Published on <span class="has-text-weight-semibold">{date}</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{readtime} min</span> read</div></div></a></div>',
-            noResultsText: '<div class="subtitle has-text-centered is-uppercase">No Results Found</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">',
-            fuzzy: true,
-        });
+        // SimpleJekyllSearch({
+        //     searchInput: document.getElementById('search'),
+        //     resultsContainer: document.getElementById('results-container'),
+        //     json: '{{site.url}}{{site.baseurl}}/search.json',
+        //     searchResultTemplate: '<div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card"><div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet"><div class="image is-16by9" style="background-image: url({image});"></div></div><a href="{url}"><div class="column has-text-left-desktop has-text-left-tablet"><h1 class="title is-size-4-touch">{title}</h1><div class="content has-text-grey">{content}<hr class="has-background-grey"><span class="has-text-grey">Published on <span class="has-text-weight-semibold">{date}</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{readtime} min</span> read</div></div></a></div>',
+        //     noResultsText: '<div class="subtitle has-text-centered is-uppercase">No Results Found</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">',
+        //     fuzzy: true,
+        // });
     </script>
 </body>
 

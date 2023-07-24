@@ -1,4 +1,4 @@
-# WhatATheme
+# DericanTheme
 markdown: kramdown
 
 # URL of the Site
@@ -19,6 +19,17 @@ favicon-url:
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/desktop.png
+
+# URL of the Image of Navbar
+navbar_background_image: https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/desktop.png
+
+# Theme Color
+theme_color: "#09166D"
+
+# Quotes on Welcome Page
+quotes:
+  - "江畔何年出建岳，江月何年初照人。"
+  - "What makes you different makes a difference."
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -46,7 +57,7 @@ author-name: Derican
 # URL for the Image of the Author
 author-image: https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/logo.png
 # 60 Words About the Author
-author-about: An undergraduate from Tsinghua University.
+author-about: A just-so-so man who happens to be discovered.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/derican
 
@@ -61,6 +72,7 @@ plugins:
   - jekyll-feed
   - jekyll-last-modified-at
   - jekyll-spaceship
+  - jekyll-toc
 
 # Permalink
 permalink: "cv/"
