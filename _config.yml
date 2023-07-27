@@ -25,6 +25,7 @@ navbar_background_image: https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/
 
 # Theme Color
 theme_color: "#09166D"
+theme_color_light: "#267E16"
 
 # Quotes on Welcome Page
 quotes:
