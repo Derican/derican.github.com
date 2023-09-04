@@ -4,6 +4,7 @@
 
 @import "post.scss";
 // @import "pretty-schedule.css";
+@import "main.css";
 
 html,
 body {
@@ -58,11 +59,6 @@ body {
 hr {
 	margin: 1rem auto;
 	height: 1px;
-}
-
-.column {
-	margin: auto 0.5rem;
-	padding: 0.5rem;
 }
 
 .searchResult {

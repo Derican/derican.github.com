@@ -39,4 +39,25 @@
 		href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/logo.png' | absolute_url }}{% endif %}"
 		type="image/x-icon"
 	/>
+	<style>
+		:root {
+			--theme-color: {{site.theme_color}};
+			--theme-color-light: {{site.theme_color_light}};
+		}
+		.navbar {
+    		background-image: url({{site.navbar_background_image}});
+  		}
+	</style>
+	<script>
+		window.addEventListener("scroll", function (event) {
+			var navbar = document.getElementById('navbar-background');
+			var scrolled = this.scrollY > navbar.clientHeight;
+
+			if (scrolled) {
+			navbar.classList.add('navbar-scrolled');
+			} else {
+			navbar.classList.remove('navbar-scrolled');
+			}
+		});
+	</script>
 </head>
