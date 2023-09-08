@@ -1,7 +1,6 @@
 ---
 title: Euler and Complex
 layout: post
-post-image: "https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/cov.png"
 description:
 category: Manim
 ---

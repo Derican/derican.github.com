@@ -1,7 +1,6 @@
 ---
 title: Vault Hunters 2nd Edition Lite
 layout: post
-post-image: "https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/vhlite.png"
 description:
 category: Minecraft
 ---
