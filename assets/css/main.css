@@ -153,6 +153,10 @@ h1, h2, h3, h4, h5, h6, [role="doc-endnote"] {
   .content a:hover {
     color: #f5f5f5 !important;
   }
+  .content blockquote {
+    background-color: black;
+    border-left: 4px solid var(--theme-color-light);
+  }
   .has-text-black {
     color: #f5f5f5 !important;
   }
