@@ -1,7 +1,6 @@
 ---
 title: Exponential Matrix
 layout: post
-post-image: "https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/cover.png"
 description:
 category: Manim
 ---

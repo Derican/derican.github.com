@@ -1,7 +1,6 @@
 ---
 title: Infinite Lava Fabric
 layout: post
-post-image: "https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/icon%20-%20%E5%89%AF%E6%9C%AC.png"
 description:
 category: Minecraft
 ---
