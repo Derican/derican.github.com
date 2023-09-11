@@ -18,10 +18,10 @@ site-keywords:
 favicon-url:
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/desktop.png
+heroimage: /assets/images/background.png
 
 # URL of the Image of Navbar
-navbar_background_image: https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/desktop.png
+navbar_background_image: /assets/images/background.png
 
 # Theme Color
 theme_color: "#09166D"
@@ -56,7 +56,7 @@ disqus-shortname: derican
 # Name of the Author
 author-name: Derican
 # URL for the Image of the Author
-author-image: https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/logo.png
+author-image: /assets/images/avatar.png
 # 60 Words About the Author
 author-about: A just-so-so man who happens to be discovered.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)

@@ -1,7 +1,7 @@
 ---
 title: Curriculum Vitae
 layout: cv
-post-image: https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/logo.png
+post-image: /assets/images/avatar.png
 description: An online cv for Derican.
 signature: Derican
 age: 22
