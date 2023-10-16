@@ -247,7 +247,7 @@ this.page.identifier = PAGE_IDENTIFIER; Replace PAGE_IDENTIFIER with your page's
 
 					tocLink.classList.remove("is-active");
 
-					if (href && decodeURIComponent(href.substring(1)) === currentHeading.textContent.toLowerCase().replace(/[（）、，；+//]/g, "").replace(/[ ]/g, "-")) {
+					if (href && decodeURIComponent(href.substring(1)) === currentHeading.textContent.toLowerCase().replace(/[（）、，；+//^]/g, "").replace(/[ ]/g, "-")) {
 						tocLink.classList.add("is-active");
 					}
 				}
