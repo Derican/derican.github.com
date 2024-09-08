@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!-- Include Meta Tags Here --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+<meta content="#000000" name="theme-color">
+<meta name="keywords" content="">
+<title>Home of Derican | 基于绝对定位技术的大屏遥控器交互设计</title>
+<!-- Open Graph general (Facebook, Pinterest & Google+) --><meta name="og:title" content="Home of Derican | 基于绝对定位技术的大屏遥控器交互设计">
+<meta name="og:description" content="">
+<meta name="og:image" content="">
+<meta name="og:image:alt" content="Home of Derican | 基于绝对定位技术的大屏遥控器交互设计">
+<meta name="og:url" content="/blog/%E5%9F%BA%E4%BA%8E%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E6%8A%80%E6%9C%AF%E7%9A%84%E5%A4%A7%E5%B1%8F%E9%81%A5%E6%8E%A7%E5%99%A8%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1">
+<meta name="article:author" content="https://www.facebook.com/Derican">
+<meta name="og:site_name" content="Home of Derican | 基于绝对定位技术的大屏遥控器交互设计">
+<meta name="og:type" content="website"> <!-- Twitter --><meta property="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Home of Derican | 基于绝对定位技术的大屏遥控器交互设计">
+<meta name="twitter:description" content="">
+<meta name="twitter:site" content="@derican1">
+<meta name="twitter:creator" content="@derican1">
+<meta name="twitter:image:src" content=""> <!-- Search Engine --><meta name="description" content="">
+<meta name="image" content=""> <!-- Schema.org for Google --><meta itemprop="name" content="Home of Derican | 基于绝对定位技术的大屏遥控器交互设计">
+<meta name="author" content="Derican">
+<meta itemprop="description" content="">
+<meta itemprop="image" content=""> <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-MMGWFQWS2K"></script> <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-MMGWFQWS2K'); </script><title>Home of Derican</title>
+<link rel="stylesheet" href="/assets/css/style.css"> <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script> <!-- <script src="https://kit.fontawesome.com/8e9dca89dc.js" crossorigin="anonymous"></script> --> <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <script src="https://code.highcharts.com/highcharts.js"></script> <script src="https://code.highcharts.com/highcharts-more.js"></script> <script> $(function () { var $canvas = null, $this = null, _ctx = null, _text = ""; $(".language-chart").each(function () { $this = $(this); _text = $this.text(); var data = JSON.parse(_text); $canvas = $( `<div id=${data["id"]} class="chart-${data["type"]}"></div>` ); $this.text("").append($canvas); var chart = Highcharts.chart(data["id"], data); chart.animation = true; $this.parent().addClass(data["class"]); }); }); </script><link rel="shortcut icon" href="https://derican-picgo.oss-cn-hangzhou.aliyuncs.com/img/logo.png" type="image/x-icon">
+<style> :root { --theme-color: #09166D; --theme-color-light: #267E16; } .navbar { background-image: url(/assets/images/background.png); }</style>
+<script> window.addEventListener("scroll", function (event) { var navbar = document.getElementById('navbar-background'); var scrolled = this.scrollY > navbar.clientHeight; if (scrolled) { navbar.classList.add('navbar-scrolled'); } else { navbar.classList.remove('navbar-scrolled'); } }); </script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pretty-schedule@1.0.5/pretty-schedule.css">
+</head>
+<body>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" id="navbar"><div class="navbar-background" id="navbar-background"><div class="container">
+<div class="navbar-brand" id="navbar-first">
+<div class="navbar-start"> <a class="navbar-item" href="/" id="navbar-title"> <strong>Home of Derican</strong> </a>
+</div>
+<div class="navbar-menu"><div class="navbar-end" id="navbar-option"> <a class="navbar-item " href="/">HOME</a> <a class="navbar-item " href="/cv">CV</a> <a class="navbar-item " href="/about">ABOUT</a>
+</div></div>
+<div class="navbar-burger" data-target="navbar-menu"> <span></span> <span></span> <span></span>
+</div>
+</div>
+<div class="navbar-start" id="navbar-second"><div class="navbar-categories"> <!-- Add your category links here --> <a class="navbar-category navbar-item " href="/category/tip">铁山往事</a> <a class="navbar-category navbar-item " href="/category/thu-cst">贵系风云</a> <a class="navbar-category navbar-item is-active" href="/category/research">科研长河</a><div class="navbar-item has-dropdown is-hoverable"> <a class="navbar-link">Miscellaneous</a><div class="navbar-dropdown"> <a class="navbar-category navbar-item " href="/category/childhood">童年回忆</a> <a class="navbar-category navbar-item navbar-item-black " href="/category/manim">Manim</a> <a class="navbar-category navbar-item navbar-item-black " href="/category/minecraft">Minecraft</a> <a class="navbar-category navbar-item navbar-item-black " href="/category/essay">随笔</a>
+</div>
+</div>
+</div></div>
+</div></div></nav><!-- Bulma Navbar JS --> <script> // document.addEventListener('DOMContentLoaded', function () { // /* Get all "navbar-burger" elements */ // var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0); // /* Check if there are any navbar burgers */ // if ($navbarBurgers.length > 0) { // /* Add a click event on each of them */ // $navbarBurgers.forEach(function ($el) { // $el.addEventListener('click', function () { // /* Get the target from the "data-target" attribute */ // var target = $el.dataset.target; // var $target = document.getElementById(target); // /* Toggle the class on both the "navbar-burger" and the "navbar-menu" */ // $el.classList.toggle('is-active'); // $target.classList.toggle('is-active'); // }); // }); // } // }); </script><section class="hero is-fullheight" id="post"><div class="hero-body">
+<div class="left-sticky-column blog-sidebar is-align-self-flex-start"><div>
+<h2 class="sidebar-title">Posts</h2>
+<ul class="sidebar-list">
+<li class="sidebar-item is-active"> <a href="/blog/%E5%9F%BA%E4%BA%8E%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E6%8A%80%E6%9C%AF%E7%9A%84%E5%A4%A7%E5%B1%8F%E9%81%A5%E6%8E%A7%E5%99%A8%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1">基于绝对定位技术的大屏遥控器交互设计</a>
+</li>
+<li class="sidebar-item "> <a href="/blog/%E5%9F%BA%E4%BA%8E%E6%8C%87%E5%B0%96%E5%BE%AE%E6%93%8D%E4%BD%9C%E7%9A%84%E5%8E%8B%E5%8A%9B%E6%96%87%E6%9C%AC%E8%BE%93%E5%85%A5%E6%8A%80%E6%9C%AF">基于指尖微操作的压力文本输入技术</a>
+</li>
+<li class="sidebar-item "> <a href="/blog/%E6%BB%91%E5%8A%A8%E8%BE%93%E5%85%A5%E4%B8%AD%E7%9A%84%E9%94%AE%E7%9B%98%E5%B8%83%E5%B1%80%E7%A0%94%E7%A9%B6">滑动输入中的键盘布局研究</a>
+</li>
+</ul>
+</div></div>
+<div class="main-column is-align-self-flex-start">
+<h1 class="title has-text-centered is-2 has-text-weight-semibold"> 基于绝对定位技术的大屏遥控器交互设计</h1>
+<div class="is-variable"><div class="subtitle has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile">
+<p class="is-uppercase has-text-weight-normal has-text-black-ter"> Published on <b>October 23, 2023</b></p>
+<p class="is-uppercase"> <i class="fas fa-clock"></i> <b class="has-text-link"> 31 min </b>READ</p>
+</div></div>
+<hr class="has-background-black">
+<div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile main" id="main-post-content">
+<p></p>
+<h2 id="intro">Intro</h2>
+<p>这个项目自2022年夏天始，历经各种波折和推延，涉及到校企联合和毕业设计等多方利益，最终随着本科毕业终于盖棺定论。</p>
+<h2 id="实习-internship">实习 Internship</h2>
+<p>大三和大四之间的暑假，按照惯例系里会安排去各个互联网公司实习。说是实习，其实很多公司给的岗位和工作都比较清闲，加上基本所有的实习都是没有工资的<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>，所以这门<em>专业实践</em>自然也广为诟病。而这门课又是自动计P/F<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>的，自然大部分同学也和公司领导一块儿能混则混。</p>
+<p>而就在实习摸鱼的过程当中，导师找到我并安排了一个企业的项目。当时我还没有所谓<em>纵向</em>、<em>横向</em>之类的概念，并且我也早早确定了推研的去向，所以当时也没有太将这个项目放在心上。我还记得当时第一次开会，是在实习公司的某层楼的楼梯拐角，那里不会影响工位那边的环境，并且堆放了很多物资和凳子，我可以有一个比较方便的开会环境。在那个线上会议上，我认识了之后要互相拉扯近一年的负责人，以及在我科研路程上帮助良多的学长。负责人在会议里展现了这个项目的伟大宏图，并且确定了几个清晰的研究问题<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>。而由于我名义上确实有在实习，并且随着疫情暂时转好实习转为线下，我能分配的时间比较少，所以开始的几周并没有太多的开发任务布置。</p>
+<h2 id="绝对定位-optitrack">绝对定位 Optitrack</h2>
+<p>实习结束之后，这个项目成为了大四的主要工作。在实习和大四开学的空挡，是我项目进展最快的几周。项目的主要交互方式是遥控器的指向，这其中包含了绝对和相对。相对指向比较容易，毕竟基于IMU的设备还是太多了，而且相应的算法也比较成熟。普通手机就能模拟交互。难办的是绝对指向，由于企业方面使用UWB的硬件设计并未确定下来，所以我也没办法用上，从而需要基于光学动捕设备——Optitrack<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>。</p>
+<p>Optitrack并不是新朋友，在上个项目我曾经接触过，但由于只是使用，并未涉及设备的搭建和环境的配置。当时由于使用空间小，五六个红外摄像头可以较好地重叠，但是如果要把场景扩展到大屏，当时的小办公室就不够用了。随之而来的问题，是实验室所配备的设备似乎并不能覆盖大屏场景所需要的3米长、1.5米宽的区域。我花了一些时间，将所有设备从小办公室搬到了旁边的大房间，同时也询问了学长关于设备参数的问题，经过计算和实践检验之后，发现能较好追踪的最大区域也不过边长为1米的正方形。</p>
+<p>为了解决这个问题，我先进行了简单的尝试。既然没办法覆盖包括大屏在内的区域，那么也许可以只追踪包含用户在内的小区域，并且通过一些计算提前获得大屏的位置和参数。毕竟在用户的使用过程中，大屏的位置应该是不会频繁移动的。我开始将大屏相对于能被追踪的桌子的位置固定下来，并且大屏的尺寸也是能提前获取的<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup>。这样就能通过将坐标系和桌子固定下来，简单地获得大屏的大致坐标。为了获得用户的指向，我直接用两个反光标记定义一条射线，并且在使用过程中觉得这样简单的布置已经能够获得不错的效果。</p>
+<p>我将这个问题和方案汇报之后，得到的仍然是关于精度不够的质疑。大屏的位置坐标等等参数的精度到底怎么样，遥控器的指向误差到底有多少等等，甲方的对接人似乎还是对这个问题穷追不舍——到底能不能将整个空间都纳入光学追踪。我再三解释，基于现有的设备这已经是最好的解决方案了，直观，并且效果好。但是针对这个问题仍然拉扯了两月之久。直到我后来将激光测量仪、3D打印模具引入项目，给出了指向误差不超过10厘米的结果后，争论才逐渐消退。</p>
+<h2 id="原型-prototype">原型 Prototype</h2>
+<p>由于这个项目的硬件和软件算法是同步进行的，所以我的实验中只能通过借用友商的设备来作为设备原型进行开发。由于我没有苹果开发设备，负责人方面也帮助开发了Apple TV的遥控器相关插件，我这边只需要借用苹果设备进行部署就可以接入后续的平台使用<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup>。而指向方面则不依赖于遥控器事件，实现方式则是将遥控器、反光标记固定在设计好的模具上，这样便实现了绝对定位的简单原型设置。</p>
+<h2 id="球形模型-smart-spherical">球形模型 Smart Spherical</h2>
+<p>项目的核心之一，是负责人要求实现并且调整的一种新的指向算法——球形模型。这是一种结合了绝对指向和相对指向的算法，但是其可行性、参数和效果都有待考证。在简单实现了指向后，我便开始开发球形模型的算法。在半个月一次的会上，我将这种算法的基本原理、实现和初步实验结果进行了汇报，但是随之而来的是甲方的不解和质疑。对于远距离大屏定位、指向算法和球形模型的实现，似乎甲方们并不感冒，而且还对我的实验结果汇报颇有微词。那次会议也让我感受到了所谓大厂的人机交互和高校实验环境的区别<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">7</a></sup>。在那之后负责人也单独和我聊过几次，我的主张还是各种交互设计至少要经过简单的定量实验后才能断定其表现，不能依据开发者或用户主观的评价，而负责人则是希望能够尽快地试一试所有可能的设计。虽然开始时对于这种模型的参数，包括用户端的和遥控器端的，以及更复杂的显控比函数都有着很多的设计，但由于时间原因最终没能全部试用。</p>
+<p>并且负责人对于交互的要求也存在一些甲方特有的反复横跳。最难接受的其实是我要求做一些定量实验时，他希望能通过一些主观感受来判断；而我给出一些显然较差的交互结果时，他又总是追问相关的数据支持。导致我后期总是倾向于否定新的交互设计，只是在最初的设计的基础上进行一些参数和算法的优化和微调。</p>
+<h2 id="滑动设计-move-or-slide">滑动设计 Move or Slide</h2>
+<p>第二个问题是滑动的设计。由于设备的设计初衷是想表现为遥控器一般的鼠标，自然是需要除了移动光标外，还能有等同于滚轮的滑动功能。在项目初期，负责人曾经画过四种滑动设计的大饼<sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote" rel="footnote">8</a></sup>，到后来研究问题变成了如何对用户移动光标和滑动操作进行分类。对这个问题一开始是讨论了简单的阈值规则，后来导师又建议使用机器学习的方法。在进过几次数据采集和训练，而且还同时尝试了多种学习和网络结构后，我逐渐发现了数据中的瓶颈——用于开发的遥控器触摸板的触点帧率不足<sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">9</a></sup>，或者说即使是原生的信号似乎也经过了硬件本身的滤波处理，导致在用户的动作一旦慢下来，即容易被滤波器消除时，两种操作是不可避免地混淆的。在充分研究了触点数据之后，我将结论和算法模拟结果作了汇报，这也导致了这个问题在之后的实际产品中并未使用我的设计和解决方案。</p>
+<p>然而我并未完全放弃这个问题，在最后的毕设中，我仍然将其作为成果的一部分，一方面存在沉没成本的影响，我还是花了不少甚至可以说很多时间在这些算法和实验上的，包括将神经网络嵌入我的前端平台，以及招募被试来体验我的模式切换算法。尽管最后的报告采用的仍然是传统的统计和阈值规则，但总之最后的结果能比较好看。</p>
+<h2 id="点击抖动-heisenberg-effect">点击抖动 Heisenberg Effect</h2>
+<p>第三个问题是点击抖动，当时提出是基于使用遥控器点击时会产生瞬时抖动的观察。负责人开始时提供了一个思路，即从当前点击事件往前一段时间，找到用户<em>真正</em>想点击的位置。当时我做了简单的统计，我触碰到触摸板准备点击到真正按下按钮的时间间隔，结果是平均值是可接受的，但是标准差异常的大，并且各用户间的差异也很大。再后来我又基于开发平台进行了模拟的测试，发现按照一定时间回溯的方法虽然比较呆，但是对于典型的抖动行为的修正的效果还是比较好的。关键在于什么是<em>典型</em>的抖动行为，因为从各种维度上考虑，修正需求差异很大的行为表现是几乎相同的。由于前两个问题也一直在纠缠，这个问题就暂时搁置了，停留在一些简单的结论上。</p>
+<h2 id="疫情封控和开题-the-pandemic-isolation-and-proposal">疫情、封控和开题 The Pandemic, Isolation and Proposal</h2>
+<p>时间从十一月一转就到了十二月，秋天时乐观的疫情也在这个到来的冬天变得形式严峻。随着校园内外的感染情况增多，同学们也变得人心惶惶，开始传出提前遣送回家的小道消息。十一月末，一些同学已经开始将回家提上日程，而我由于项目的关系一直留在学校。楼层里和实验室的同学越来越少，被试也逐渐变得难以招募，大部分的时间都是我一个人在实验室进行开发和调试。到十二月上旬，正式的遣送通知出来后，校园也和这个冬天一样迅速萧瑟。食堂也针对校园的人数作了调整，连菜品的种类也变少了。大批返乡的另一个隐患是，如果程序链中的苹果生态的软件不幸崩溃<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup>，我必须找还在校的同学借用Mac来操作，这在疫情蔓延的背景下也是极其困难的。负责疫情防控的辅导员多次私聊我，询问我的返乡计划，我也都只能坦言等导师和甲方方面的通知。开会时我也反映了校内的情况，对返乡意愿进行了一些旁敲侧击，但是依然没有得到正面的回复。</p>
+<p>十二月中旬，随着封控日益缩紧，基本上我每天的行程都是早上起床后在宿舍吃早饭，工作一会儿到中午，去听涛拿盒饭直接到FIT楼实验室旁边的空间吃，然后在实验室忙到六点左右，再去紫荆拿盒饭回宿舍吃。那几天在吃午饭的时候，经常会遇到同楼层的保洁阿姨，她也会在那儿吃盒饭。我们就在那个会议桌的两端默默地吃着，有一天我一下打不开盒饭的盖子，她还笑着说“你那样、那样开，对”。后来就没太看见她了，估计也是感染了或者返乡了吧。</p>
+<p>果不其然没几天我的情况也恶化了。其实从月初我感觉体温就有一些高，以及头有些晕，但是一直以来没有发烧，而且也有实验室的暖气通风确实也没那么好。所以我怀疑是当时有一些轻状的感染，但是由于病毒的浓度较低，一直没有爆发出来。后来由于我每天都去实验室，也没有每天消毒，病毒浓度上去之后免疫系统就不太够用了。当时已经有了放开的风声，所以也只是和辅导员汇报了一下，并且由于之前发了很多抗原和母亲提前预备的药品，也没有太缺物资。桃李也专门开放了阳性窗口和通道，只负责给阳性的同学拿饭，阿姨也是比较贴心，总是会给多一些饭菜和水果<sup id="fnref:11" role="doc-noteref"><a href="#fn:11" class="footnote" rel="footnote">11</a></sup>。第一周几乎每天都只有中午一段时间比较清醒，烧迷糊了就往床上一躺，洗澡也是尽量减少次数以避免着凉。<em>刀片嗓</em>也是前几天比较严重，也是多亏了北京舍友的家长送来的润喉糖，后面几天也不是那么难受了。第二周基本退烧之后，身体也基本恢复过来了，就是每天仍然比较嗜睡。一开始汇报我阳的结果之后，负责人也说他阳了<sup id="fnref:12" role="doc-noteref"><a href="#fn:12" class="footnote" rel="footnote">12</a></sup>，所以这半个月基本没啥进度。到月底我和导师单独问返乡的事情，他表示会和负责人沟通一下。</p>
+<p>因为之前的安排是十二月底结题，结果给疫情整这一出直接推迟了。而且我觉得结论也比较清晰之后，他还是觉得有一些问题没解决。但是好说歹说还是让我回家了，并且提前录入一些数据回去好分析。同时由于开题也是基于这个项目，所以我的进度也是很快，将给甲方的报告小改一下直接开题其实没问题。回家过年期间，项目的事情也总是让人焦虑，甚至大年三十下午还通知要开会对进度<sup id="fnref:13" role="doc-noteref"><a href="#fn:13" class="footnote" rel="footnote">13</a></sup>。我也尽量把事情推到开学后，到线下结合设备试一下效果再汇报。</p>
+<h2 id="忙碌的春天-busy-spring">忙碌的春天 Busy Spring</h2>
+<p>大四也像之前一样很早就回学校了，甚至由于回校过早把高中宿舍聚会给提到了大年初八。回来之后依然是投入项目中，针对滑动和点击抖动的问题。滑动问题主要是验证了之前的<em>假60帧</em>猜想，数据精度实在不支持行为预测，哪怕是使用机器学习的方法。而且算法表现也和用户的使用方式关系很大，所以之后也逐渐放弃了这个问题。点击抖动成为了重点，我也找到了以前工作中的相关做法，发现对于这个场景的帮助也聊胜于无。在几次讨论后，问题又聚焦在了<em>用户意图点击位置</em>上，为了收集到正确的数据，我又再引入了压力膜，贴在遥控器上，以压力显著增大的时刻作为用户<em>真正想</em>点击的位置。在做了用户实验后，把数据进行综合分析，发现还是一开始的时间回溯法效果最好，其他方法似乎都需要一些复杂的自适应过程。</p>
+<p>在压力膜引入并且给出结论后，终于用数据终结了更多的需求的提出。我的舍友则在接了下游的文本输入任务后，也要和我这边的平台进行对接，后面的需求更换和用户实验也搞得他挺emo的。在其他同学都在忙碌着毕设的进度和中期汇报时，我则在忙碌地准备项目的中期和结题汇报。负责人给导师发了PPT的参照，要不就是内容和数据非常多要不就是充满了很多文献的调研总结，这对于我们的交互设计报告属于是太为难了<sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote" rel="footnote">14</a></sup>。我按照要求好说歹说修改了几版，由于之前的拉扯已经太久，所以汇报时也没有更多的问题，我就直接棒读完PPT就草草结束。</p>
+<h2 id="结题-the-end">结题 The End</h2>
+<p>结题也就在中期之后不久，除了汇报的PPT，还需要一些所谓调研的材料、技术文档之类，我们也不想多搞，稍微凑凑字数了事。也是由于项目的结题，我直接将工作整理成毕设的文章，一些被负责人否决的问题又被我整理到了论文里，也显得整体思路比较连贯。在结题之后我和负责人的联系终于停止了，只有他不时对项目里的一些细节有一些提问，我都尽量显得不耐烦地回答<sup id="fnref:15" role="doc-noteref"><a href="#fn:15" class="footnote" rel="footnote">15</a></sup>。</p>
+<h2 id="注释-notes">注释 Notes</h2>
+<div class="footnotes" role="doc-endnotes"><ol>
+<li id="fn:1" role="doc-endnote"><p>本来还是有一些公司给出按日的工资和补贴，但后来居然被负责老师叫停了。 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:2" role="doc-endnote"><p>Pass or Fail，只要总评及格统一计P，并且不计入GPA计算。 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:3" role="doc-endnote"><p>在当时看来还是比较清晰的，但是随着研究深入可能后期走偏了。 <a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:4" role="doc-endnote"><p>红外光学动捕系统，利用特定的反光标记来绝对定位，需要至少三个配套红外摄像头，精度可达0.1毫米。 <a href="#fnref:4" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:5" role="doc-endnote"><p>甚至其中某些参数也可以先用校准好的配置进行精细测量。 <a href="#fnref:5" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:6" role="doc-endnote"><p>但这也为后来的开发埋下了伏笔，在疫情严重的时候，如果插件不幸崩溃了，将导致整个实验和遥控器事件有关的交互都无法实现。 <a href="#fnref:6" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:7" role="doc-endnote"><p>后来在和参加了前一次校企合作的学长交流时，他吐槽到有次汇报提到了球坐标系，结果被问什么是球坐标系，一时不知该怎么回答。 <a href="#fnref:7" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:8" role="doc-endnote"><p>这些设计出现在前端平台的代码中，但从未被实现过，最后优化时删除了。 <a href="#fnref:8" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:9" role="doc-endnote"><p>虽然可以调整插件频率，但是Apple TV最多也就跑到60帧，而且触点的60帧是<em>假的</em>，前后相邻两帧是完全相同的数据。 <a href="#fnref:9" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:10" role="doc-endnote"><p>有时是太久不清理后台导致的崩溃，但也会有其他因素，比如系统自动更新等等。 <a href="#fnref:10" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:11" role="doc-endnote"><p>不知道当时关于阳后免疫力和二阳之类的研究如何，在<em>Positive Only</em>的食堂工作还是需要一些勇气的吧。 <a href="#fnref:11" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:12" role="doc-endnote"><p>怎么这么巧，怀疑是故意的。 <a href="#fnref:12" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:13" role="doc-endnote"><p>虽然最后也没开成吧，但是搞得我拖到了下午五点才会老家。 <a href="#fnref:13" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:14" role="doc-endnote"><p>导师也吐槽说之前的合作汇报没那么麻烦，说可能是KPI啥的不够了。 <a href="#fnref:14" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+<li id="fn:15" role="doc-endnote"><p>说实话，我是真想在结题后拉黑他。 <a href="#fnref:15" class="reversefootnote" role="doc-backlink">↩</a></p></li>
+</ol></div>
+</div>
+<div class="disqus-comments" id="disqus_thread"></div>
+</div>
+<div class="right-sticky-column is-align-self-flex-start blog-sidebar"><div class="table-of-contents">
+<h2 class="toc-title">Table of Contents</h2>
+<ul>
+<li class="is-toc-level-2"><a href="#intro">Intro</a></li>
+<li class="is-toc-level-2"><a href="#%E5%AE%9E%E4%B9%A0-internship">实习 Internship</a></li>
+<li class="is-toc-level-2"><a href="#%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D-optitrack">绝对定位 Optitrack</a></li>
+<li class="is-toc-level-2"><a href="#%E5%8E%9F%E5%9E%8B-prototype">原型 Prototype</a></li>
+<li class="is-toc-level-2"><a href="#%E7%90%83%E5%BD%A2%E6%A8%A1%E5%9E%8B-smart-spherical">球形模型 Smart Spherical</a></li>
+<li class="is-toc-level-2"><a href="#%E6%BB%91%E5%8A%A8%E8%AE%BE%E8%AE%A1-move-or-slide">滑动设计 Move or Slide</a></li>
+<li class="is-toc-level-2"><a href="#%E7%82%B9%E5%87%BB%E6%8A%96%E5%8A%A8-heisenberg-effect">点击抖动 Heisenberg Effect</a></li>
+<li class="is-toc-level-2"><a href="#%E7%96%AB%E6%83%85%E5%B0%81%E6%8E%A7%E5%92%8C%E5%BC%80%E9%A2%98-the-pandemic-isolation-and-proposal">疫情、封控和开题 The Pandemic, Isolation and Proposal</a></li>
+<li class="is-toc-level-2"><a href="#%E5%BF%99%E7%A2%8C%E7%9A%84%E6%98%A5%E5%A4%A9-busy-spring">忙碌的春天 Busy Spring</a></li>
+<li class="is-toc-level-2"><a href="#%E7%BB%93%E9%A2%98-the-end">结题 The End</a></li>
+<li class="is-toc-level-2"><a href="#%E6%B3%A8%E9%87%8A-notes">注释 Notes</a></li>
+</ul>
+</div></div>
+</div></section><footer id="footer"> <!--Footer Button--><div class="container has-text-centered has-background-grey-darker" id="backtotop"> <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
+</div>
+<!--Footer Main Section--><div class="has-background-grey-darker"><div class="container columns"> <!--Name Section--><div class="column has-text-left-desktop has-text-centered-mobile"> <a href="/#about"><div class="columns">
+<div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet"><figure class="image is-64x64"> <img class="is-rounded" src="/assets/images/avatar.png"></figure></div>
+<div class="column is-marginless">
+<h5 class="has-text-grey-lighter">Derican</h5>
+<div class="content has-text-grey"><p>A just-so-so man who happens to be discovered.</p></div>
+</div>
+</div></a>
+</div>
+<!--Link Section--><div class="column has-text-white">
+<h3>More Links</h3>
+<li> <a href="/project">Projects</a>
+</li>
+<li> <a target="_blank" href="/feed.xml">Subscribe via RSS</a>
+</li>
+</div>
+<!--Blog-post Section--><div class="column has-text-white">
+<h3>Recent Posts</h3>
+<li> <a href="/blog/%E5%BD%93%E6%88%91%E4%BB%AC%E5%9C%A8%E9%80%89%E6%8B%A9%E4%BF%9D%E7%A0%94%E7%9A%84%E6%97%B6%E5%80%99-%E7%A9%B6%E7%AB%9F%E5%9C%A8%E9%80%89%E6%8B%A9%E4%BB%80%E4%B9%88">当我们在选择保研的时候，究竟在选择什么</a>
+</li>
+<li> <a href="/blog/%E5%9B%9B%E5%B9%B4%E7%9A%84%E8%B4%A6%E5%8D%95">四年的账单</a>
+</li>
+<li> <a href="/blog/%E5%B0%8F%E5%B7%B7%E5%AD%90%E9%87%8C%E7%9A%84%E5%A2%A8%E9%A6%99">小巷子里的墨香</a>
+</li>
+</div>
+</div></div>
+<div class="has-background-black has-text-centered has-text-white" id="credits"> <i class="far fa-copyright"></i> 2024 | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">DericanTheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.github.com/Derican" target="_blank" rel="noopener noreferrer">Derican</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+</div></footer>
+</body>
+<script> /** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/ /* var disqus_config = function () { this.page.url = PAGE_URL; Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER; Replace PAGE_IDENTIFIER with your page's unique identifier variable }; */ (function () { /* DON'T EDIT BELOW THIS LINE */ var d = document, s = d.createElement("script"); s.src = "https://derican.disqus.com/embed.js"; s.setAttribute("data-timestamp", +new Date()); (d.head || d.body).appendChild(s); })(); </script> <script src="https://cdn.jsdelivr.net/npm/pretty-schedule@1.0.5/pretty-schedule.js"></script> <!-- <script src="../assets/js/pretty-schedule.js"></script> --> <script> $(function () { var $canvas = null, $this = null, _ctx = null, _text = ""; $(".language-subject-radar").each(function () { $this = $(this); _text = $this.text(); var data = JSON.parse(_text); $canvas = $( `<div id=${data["id"]} class="chart-${data["type"]}"></div>` ); $this.text("").append($canvas); var chart = Highcharts.chart(data["id"], { chart: { polar: true, }, title: { text: data["title"], }, pane: { startAngle: 0, endAngle: 360, }, xAxis: { tickInterval: 72, min: 0, max: 360, labels: { formatter: function () { return [ "Experience", "Simplicity", "GPA-Friendly", "Time Saving", "Usefulness", ][this.value / 72]; }, }, }, yAxis: { min: 0, max: 5, labels: { enabled: false, }, tickPositions: [0, 1, 2, 3, 4, 5], }, plotOptions: { series: { pointStart: 0, pointInterval: 72, }, column: { pointPadding: 0, groupPadding: 0, }, }, series: [ { type: "area", name: "Area", data: data["marks"], visible: true, showInLegend: false, }, ], tooltip: { formatter: function () { return ( [ "Experience", "Simplicity", "GPA-Friendly", "Time Saving", "Usefulness", ][this.x / 72] + ": " + this.y ); }, }, }); chart.animation = true; $this.parent().addClass(data["class"]); }); }); $(function () { var $canvas = null, $this = null, _ctx = null, _text = ""; $(".language-pretty-schedule").each(function () { $this = $(this); _text = $this.text(); var data = JSON.parse(_text); $canvas = $(`<div id=${data["id"]} class="pretty-schedule"></div>`); $canvas.prettySchedule(data["options"]); $this.text("").append($canvas); $this.parent().addClass(data["class"]); }); }); $(function () { var $canvas = null, $this = null, _ctx = null, _text = ""; $(".language-line-chart").each(function () { $this = $(this); _text = $this.text(); var data = JSON.parse(_text); if (data["xAxis"]["type"] == "datetime") { for (var i = 0; i < data["series"].length; i++) { for (var j = 0; j < data["series"][i]["data"].length; j++) { data["series"][i]["data"][j][0] = new Date( data["series"][i]["data"][j][0] ).getTime(); } } } $canvas = $( `<div id=${data["id"]} class="chart-${data["type"]}"></div>` ); $this.text("").append($canvas); var chart = Highcharts.chart(data["id"], { title: { text: data["title"], align: "left", }, subtitle: { text: data["subtitle"], align: "left", }, yAxis: data["yAxis"], xAxis: data["xAxis"], legend: { layout: "vertical", align: "right", verticalAlign: "middle", }, series: data["series"], responsive: { rules: [ { condition: { maxWidth: 500, }, chartOptions: { legend: { layout: "horizontal", align: "center", verticalAlign: "bottom", }, }, }, ], }, }); chart.animation = true; $this.parent().addClass(data["class"]); }); }); </script> <script> window.addEventListener("DOMContentLoaded", function () { var headings = document.querySelectorAll( "#main-post-content h2, #main-post-content h3, #main-post-content h4, #main-post-content h5, #main-post-content h6" ); window.addEventListener("scroll", function () { var currentHeading = null; for (var i = 0; i < headings.length; i++) { var heading = headings[i]; var headingRect = heading.getBoundingClientRect(); if (headingRect.top <= 50) { currentHeading = heading; } else { if (headingRect.top <= 200) { currentHeading = heading; } break; } } if (!currentHeading) { currentHeading = headings[0]; } var tocLinks = document.querySelectorAll(".table-of-contents a"); for (var j = 0; j < tocLinks.length; j++) { var tocLink = tocLinks[j]; var href = tocLink.getAttribute("href"); tocLink.classList.remove("is-active"); if ( href && decodeURIComponent(href.substring(1)) === currentHeading.textContent .toLowerCase() .replace(/[（）、，；,+//^]/g, "") .replace(/[ ]/g, "-") ) { tocLink.classList.add("is-active"); } } }); }); </script>
+</html>
