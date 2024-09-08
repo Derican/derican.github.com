@@ -17,7 +17,6 @@ gem "rack"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-admin', "0.9.0"
-  gem "jekyll-last-modified-at"
   gem "jekyll-spaceship"
   gem "jekyll-toc"
 end

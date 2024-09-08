@@ -45,10 +45,6 @@ layout: compress
 							<p class="is-uppercase has-text-weight-normal has-text-black-ter">
 								Published on <b>{{ page.date | date: "%-B %d, %Y" }}</b>
 							</p>
-							<p class="is-uppercase has-text-weight-normal has-text-black-ter">
-								Last Modified on
-								<b>{{ page.last_modified_at | date: "%-B %d, %Y" }}</b>
-							</p>
 							{% assign words = content | number_of_words %} {%- unless
 							content.size == 0 -%}
 							<p class="is-uppercase">
